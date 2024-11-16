@@ -1,0 +1,587 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  font-size: clamp(10px, 1vw, 20px);
+}
+
+.view1 {
+  height: 100%;
+  padding: 7vh 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(242, 252, 255);
+  background: linear-gradient(138deg, rgb(242, 252, 255) 25%, rgb(211, 255, 245) 73%);
+}
+@media (max-width: 450px) {
+  .view1 {
+    padding: 7vh 7vw;
+  }
+}
+.view1 .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1920px;
+}
+.view1 .main .top {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 450px) {
+  .view1 .main .top {
+    flex-direction: column-reverse;
+    gap: 6em;
+  }
+}
+.view1 .main .top .left {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 6vw;
+}
+@media (max-width: 450px) {
+  .view1 .main .top .left {
+    width: 100%;
+    padding: 0 0;
+  }
+}
+.view1 .main .top .left h1 {
+  font-size: 4.5em;
+}
+@media (max-width: 450px) {
+  .view1 .main .top .left h1 {
+    text-align: center;
+  }
+}
+.view1 .main .top .right {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+.view1 .main .top .right img {
+  width: 35em;
+}
+.view1 .main .bottom {
+  width: 100%;
+  padding: 0 9vw;
+  padding-top: 12vh;
+}
+@media (max-width: 450px) {
+  .view1 .main .bottom {
+    padding: 8vh 0;
+  }
+}
+.view1 .main .bottom p {
+  width: 100%;
+  font-size: 2.2em;
+  text-align: center;
+  opacity: 0.7;
+}
+@media (max-width: 450px) {
+  .view1 .main .bottom p {
+    font-size: 3.6em;
+  }
+}
+
+.view2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+.view2 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+@media (max-width: 450px) {
+  .view2 .main {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.view2 .main img {
+  margin-top: 2em;
+  width: 22em;
+}
+.view2 .main .first,
+.view2 .main .second,
+.view2 .main .third {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+.view2 .main .first h1,
+.view2 .main .second h1,
+.view2 .main .third h1 {
+  font-size: 1.5em;
+}
+.view2 .main .first p,
+.view2 .main .second p,
+.view2 .main .third p {
+  font-size: 1.3em;
+  opacity: 0.7;
+}
+@media (max-width: 450px) {
+  .view2 .main .first,
+  .view2 .main .second,
+  .view2 .main .third {
+    width: 100%;
+    gap: 1;
+  }
+  .view2 .main .first h1,
+  .view2 .main .second h1,
+  .view2 .main .third h1 {
+    font-size: 3em;
+  }
+  .view2 .main .first p,
+  .view2 .main .second p,
+  .view2 .main .third p {
+    font-size: 2em;
+  }
+  .view2 .main .first img,
+  .view2 .main .second img,
+  .view2 .main .third img {
+    width: 29em;
+  }
+}
+.view2 .main .second img {
+  width: 25em;
+}
+@media (max-width: 450px) {
+  .view2 .main .second img {
+    width: 30em;
+    padding: 3em;
+  }
+}
+
+.view3 {
+  background-color: #186cd5;
+  color: white;
+  padding: 8vh 4vw;
+}
+@media (max-width: 450px) {
+  .view3 {
+    padding: 12vh 0vw;
+  }
+}
+.view3 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+@media (max-width: 450px) {
+  .view3 .top {
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+  }
+}
+.view3 .top p {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.view3 .top h1 {
+  font-size: 4.6em;
+}
+.view3 .bottom {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 450px) {
+  .view3 .bottom {
+    padding: 0;
+    margin-top: 6vh;
+  }
+}
+.view3 .bottom > * {
+  margin: 2rem;
+  width: 40%;
+  padding: 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 2em;
+  transition: all 300ms;
+}
+@media (max-width: 450px) {
+  .view3 .bottom > * {
+    width: 100%;
+    padding: 2em;
+  }
+}
+.view3 .bottom > * img {
+  width: 6em;
+}
+.view3 .bottom > * p {
+  font-size: 1.6em;
+}
+.view3 .bottom > *:hover {
+  background-color: #679ad9;
+}
+
+.view4 {
+  margin: 8vh 0;
+}
+.view4 .top {
+  padding: 0 14vw;
+}
+.view4 .top p {
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-bottom: 2vh;
+}
+.view4 .top h1 {
+  font-size: 4.6em;
+  width: 90%;
+}
+.view4 .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+}
+@media (max-width: 450px) {
+  .view4 .bottom {
+    flex-direction: column;
+    gap: 4em;
+  }
+}
+.view4 .bottom .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view4 .bottom .left img {
+  width: 35em;
+}
+.view4 .bottom .right {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.view4 .bottom .right button {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+}
+.view4 .bottom .right .topp .btn {
+  display: flex;
+  gap: 3em;
+}
+@media (max-width: 450px) {
+  .view4 .bottom .right .topp .btn {
+    flex-direction: column;
+  }
+  .view4 .bottom .right .topp .btn button {
+    text-align: start;
+  }
+}
+.view4 .bottom .right .bottomm {
+  margin-right: 5vw;
+  width: 90%;
+  padding-top: 6vh;
+  border-top: 0.3px solid rgb(173, 173, 173);
+}
+.view4 .bottom .right .bottomm p {
+  width: 95%;
+}
+.view4 .bottom .right .bottomm button {
+  text-align: start;
+}
+.view4 .bottom .right > * {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+@media (max-width: 450px) {
+  .view4 .bottom .right > * {
+    padding-left: 4em;
+  }
+}
+.view4 .bottom .right > * p {
+  font-size: 1.6em;
+  width: 76%;
+  line-height: 1.3em;
+  opacity: 0.6;
+}
+.view4 .bottom > * {
+  flex-basis: 50%;
+}
+
+.view5,
+.view11,
+.view10,
+.view6,
+.view7 {
+  margin-top: 12vh;
+}
+@media (max-width: 450px) {
+  .view5,
+  .view11,
+  .view10,
+  .view6,
+  .view7 {
+    margin-top: 2vh;
+  }
+}
+.view5 .main,
+.view11 .main,
+.view10 .main,
+.view6 .main,
+.view7 .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .view5 .main,
+  .view11 .main,
+  .view10 .main,
+  .view6 .main,
+  .view7 .main {
+    flex-direction: column;
+  }
+}
+.view5 .main .left,
+.view11 .main .left,
+.view10 .main .left,
+.view6 .main .left,
+.view7 .main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 0 6vw;
+}
+.view5 .main .left h3,
+.view11 .main .left h3,
+.view10 .main .left h3,
+.view6 .main .left h3,
+.view7 .main .left h3 {
+  font-size: 2em;
+}
+.view5 .main .left h1,
+.view11 .main .left h1,
+.view10 .main .left h1,
+.view6 .main .left h1,
+.view7 .main .left h1 {
+  font-size: 4.5em;
+}
+.view5 .main .left p,
+.view11 .main .left p,
+.view10 .main .left p,
+.view6 .main .left p,
+.view7 .main .left p {
+  font-size: 1.6em;
+  opacity: 0.7;
+}
+.view5 .main .left button,
+.view11 .main .left button,
+.view10 .main .left button,
+.view6 .main .left button,
+.view7 .main .left button {
+  width: 40%;
+  padding: 1em;
+  border-radius: 2em;
+  background-color: transparent;
+  border: 1px solid #0468d7;
+  color: #0468d7;
+  font-weight: 700;
+  transition: all 300ms;
+}
+.view5 .main .left button:hover,
+.view11 .main .left button:hover,
+.view10 .main .left button:hover,
+.view6 .main .left button:hover,
+.view7 .main .left button:hover {
+  background-color: #0468d7;
+  color: white;
+}
+.view5 .main .right,
+.view11 .main .right,
+.view10 .main .right,
+.view6 .main .right,
+.view7 .main .right {
+  display: flex;
+  justify-content: end;
+}
+.view5 .main .right img,
+.view11 .main .right img,
+.view10 .main .right img,
+.view6 .main .right img,
+.view7 .main .right img {
+  width: 40em;
+  padding-right: 2em;
+}
+.view5 .main > *,
+.view11 .main > *,
+.view10 .main > *,
+.view6 .main > *,
+.view7 .main > * {
+  flex-basis: 50%;
+}
+
+.view8 {
+  padding: 10vh 5vw;
+}
+.view8 .main {
+  background-color: #aadbf6;
+  display: flex;
+  border-radius: 2.6em;
+}
+@media (max-width: 450px) {
+  .view8 .main {
+    height: 94vh;
+    flex-direction: column;
+  }
+}
+.view8 .main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2.8em;
+  flex-basis: 50%;
+}
+@media (max-width: 450px) {
+  .view8 .main .left {
+    padding: 4em;
+  }
+}
+@media (max-width: 450px) {
+  .view8 .main .left h2 {
+    font-size: 2em;
+  }
+}
+.view8 .main .left h1 {
+  font-size: 2.6em;
+  font-weight: 300;
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .view8 .main .left h1 {
+    width: 80%;
+    font-size: 3.5em;
+  }
+}
+.view8 .main .left div {
+  margin-top: 6vh;
+}
+.view8 .main .left div .btn1 {
+  padding: 1em;
+  border-radius: 2em;
+  background-color: transparent;
+  font-weight: 700;
+}
+.view8 .main .left div .btn2 {
+  padding: 1em;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  border-radius: 2em;
+}
+.view8 .main .right {
+  position: relative;
+  top: -6em;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 450px) {
+  .view8 .main .right {
+    right: -2.5em;
+    top: -3em;
+  }
+}
+.view8 .main .right img {
+  position: absolute;
+  width: 27em;
+}
+@media (max-width: 450px) {
+  .view8 .main .right img {
+    position: none;
+  }
+}
+
+.view9 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view9 .center {
+  background-color: #053C7D;
+  width: 80%;
+  color: white;
+  padding: 5rem;
+  border-radius: 2.6rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 450px) {
+  .view9 .center {
+    height: 60vh;
+    margin-bottom: 5vh;
+    padding-top: 8em;
+  }
+}
+.view9 .center h1 {
+  font-size: 3rem;
+}
+@media (max-width: 450px) {
+  .view9 .center h1 {
+    font-size: 4em;
+  }
+}
+.view9 .center div {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+@media (max-width: 450px) {
+  .view9 .center div {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.view9 .center div button {
+  padding: 0.5em 1.4em;
+  border-radius: 1rem;
+  border: 1px solid #0468d7;
+  color: #0468d7;
+  background-color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: all 300ms;
+}
+@media (max-width: 450px) {
+  .view9 .center div button {
+    padding: 1.5em 3em;
+  }
+}
+.view9 .center div button:hover {
+  color: white;
+  background-color: #0468d7;
+}
+
+@media (max-width: 450px) {
+  .laa {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+}/*# sourceMappingURL=style.css.map */
